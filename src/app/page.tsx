@@ -14,7 +14,7 @@ export interface Item {
   imgUrl: string;
   title: string;
   subtitle: string;
-  type: 'experience' | 'projects' | 'education';
+  type: 'experience' | 'project' | 'education';
   description: string;
   details: {
     [key: string]: string | string[];

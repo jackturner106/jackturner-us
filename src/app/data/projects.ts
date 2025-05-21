@@ -6,7 +6,7 @@ export const project_list: Item[] = [
     imgUrl: '/tailwind.png',
     title: 'Personal Website',
     subtitle: 'Side Project • 2025',
-    type: 'projects',
+    type: 'project',
     description: 'Making this website to showcase my projects and experience. Used Typescript, React, and Tailwind CSS.',
     details: {
       features: [
@@ -24,7 +24,7 @@ export const project_list: Item[] = [
     imgUrl: '/UNO_logo.png',
     title: 'Q-Learning UNO Bot',
     subtitle: 'Class Project • 2025',
-    type: 'projects',
+    type: 'project',
     description: 'Used Q-Learning and Python to make a bot that can plays UNO for CS5100 AI class final project. Achieved 40% win rate in 3-player games.',
     details: {
       details: [
@@ -40,7 +40,7 @@ export const project_list: Item[] = [
     imgUrl: '/NU_Rover.jpg',
     title: 'NU Mars Rover Team',
     subtitle: 'Extracurriculars • 2025',
-    type: 'projects',
+    type: 'project',
     description: 'Developer on the Autonomous sub-team of the Northeastern Mars Rover Team, a component of the Students for the Exploration and Development of Space (SEDS) club. ',
     details: {
       Details: [
@@ -61,7 +61,7 @@ export const project_list: Item[] = [
     imgUrl: '/NER.jpg',
     title: 'Northeastern Electric Racing',
     subtitle: 'Extracurriculars • 2025',
-    type: 'projects',
+    type: 'project',
     description: 'Developer on the Software sub-team at Northeastern Electric Racing. Build the project management platform Finishline. Served as a Tech Lead for spring semester of 2024, responsible for mentoring and leading new developers.',
     details: {
       details: [
