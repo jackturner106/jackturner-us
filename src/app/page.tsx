@@ -104,7 +104,7 @@ export default function Home() {
               onClick={() => {
                 if (window.innerWidth < 768) {
                   // On mobile, navigate to detail page
-                  router.push(`/${activeTab}/${item.id}`);
+                  router.push(`/mobileDetailPage/${item.id}`);
                 } else {
                   // On desktop, show detail panel
                   setSelectedItem(item);
