@@ -7,7 +7,7 @@ export const project_list: Item[] = [
     title: 'Personal Website',
     subtitle: 'Side Project • 2025',
     type: 'project',
-    description: 'Making this website to showcase my projects and experience. Used Typescript, React, and Tailwind CSS.',
+    description: 'Making this website to showcase my projects and experience. Used Typescript, React, and Tailwind CSS. Hosted on a Debian server using nginx.',
     details: {
       features: [
         'Responsive design',
@@ -39,7 +39,7 @@ export const project_list: Item[] = [
     id: 9,
     imgUrl: '/NU_Rover.jpg',
     title: 'NU Mars Rover Team',
-    subtitle: 'Extracurriculars • 2025',
+    subtitle: 'Extracurriculars • 2023 - 2024',
     type: 'project',
     description: 'Developer on the Autonomous sub-team of the Northeastern Mars Rover Team, a component of the Students for the Exploration and Development of Space (SEDS) club. ',
     details: {
@@ -60,7 +60,7 @@ export const project_list: Item[] = [
     id: 10,
     imgUrl: '/NER.jpg',
     title: 'Northeastern Electric Racing',
-    subtitle: 'Extracurriculars • 2025',
+    subtitle: 'Extracurriculars • 2023 - 2024',
     type: 'project',
     description: 'Developer on the Software sub-team at Northeastern Electric Racing. Build the project management platform Finishline. Served as a Tech Lead for spring semester of 2024, responsible for mentoring and leading new developers.',
     details: {
