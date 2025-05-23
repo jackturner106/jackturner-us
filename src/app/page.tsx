@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Card from './components/Card';
 import DetailPanel from './components/DetailPanel';
@@ -24,7 +24,18 @@ export interface Item {
 
 export default function Home() {
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
-  const [activeTab, setActiveTab] = useState<'experience' | 'projects' | 'education'>('projects');
+  const [activeTab, setActiveTab] = useState<'experience' | 'projects' | 'education'>(() => {
+    if (typeof window !== 'undefined') {
+      return (localStorage.getItem('activeTab') as 'experience' | 'projects' | 'education') || 'projects';
+    }
+    return 'projects';
+  });
+
+  // Save to localStorage whenever activeTab changes
+  useEffect(() => {
+    localStorage.setItem('activeTab', activeTab);
+  }, [activeTab]);
+  
   const router = useRouter();
 
   const items = {
@@ -36,7 +47,7 @@ export default function Home() {
   return (
     <div className="h-screen flex">
       {/* Left panel - Scrollable list */}
-      <div className="w-full md:w-2/5 lg:w-1/3 border-r border-gray-200 bg-white overflow-y-auto">
+      <div className="w-full md:w-2/5 lg:w-1/3 border-r border-gray-200 bg-white flex flex-col">
         <div className="p-6 text-center border-b border-gray-200">
           <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
             <Image
@@ -94,7 +105,7 @@ export default function Home() {
         </div>
 
         {/* List of items */}
-        <div className="p-4">
+        <div className="p-4 flex-1 overflow-y-auto">
           {items[activeTab].map((item) => (
             <Card
               key={item.id}

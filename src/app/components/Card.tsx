@@ -25,14 +25,16 @@ export default function Card({ title, subtitle, onClick, isSelected, imgUrl }: C
           <h3 className="font-semibold text-lg text-gray-900">{title}</h3>
           <p className="text-gray-600 text-sm mt-1">{subtitle}</p>
         </div>
-        <div className="relative w-12 h-12 rounded-full overflow-hidden">
-            <Image
-              src={imgUrl}
-              alt={title}
-              fill
-              style={{ objectFit: 'cover' }}
-              priority
-            />
+        <div className="min-w-12">
+          <div className="relative w-12 h-12 rounded-full overflow-hidden">
+              <Image
+                src={imgUrl}
+                alt={title}
+                fill
+                style={{ objectFit: 'cover' }}
+                priority
+              />
+            </div>
           </div>
       </div>
     </div>
