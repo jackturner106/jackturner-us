@@ -7,7 +7,7 @@ import { notFound, useParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
+export default function ProjectDetail() {
   const router = useRouter();
   const data_items = [...project_list, ...education_list, ...experience_list];
   const { id } = useParams();
