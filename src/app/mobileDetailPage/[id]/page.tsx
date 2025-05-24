@@ -2,6 +2,7 @@
 import { project_list } from '../../data/projects';
 import { education_list } from '../../data/educations';
 import { experience_list } from '../../data/experiences';
+import { introduction_list } from '../../data/introduction';
 import DetailPanel from '../../components/DetailPanel';
 import { notFound, useParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
@@ -9,7 +10,7 @@ import React from 'react';
 
 export default function ProjectDetail() {
   const router = useRouter();
-  const data_items = [...project_list, ...education_list, ...experience_list];
+  const data_items = [...project_list, ...education_list, ...experience_list, ...introduction_list];
   const { id } = useParams();
   const item = data_items.find((p) => p.id === Number(id));
   if (!item) return notFound();

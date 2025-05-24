@@ -36,6 +36,23 @@ export const project_list: Item[] = [
     }
   },
   {
+    id: 12,
+    imgUrl: '/chess_logo.png',
+    title: 'Rust Chess Bot',
+    subtitle: 'Side Project • 2024',
+    type: 'project',
+    description: 'Built a chess bot from scratch in Rust using Minimax with ab-pruning. Implemented custom position evaluation function taking into account material, mobility, and position.',
+    details: {
+      details: [
+        'Implemented in Rust with custom chess engine and game loop',
+        'Used Minimax search with ab-pruning and tapered evaluation and MVV-LVA move ordering',
+        'Performance optimized using VTune profiler'
+      ],
+      technologies: ['Rust'],
+      repo: 'https://github.com/jackturner106/rust_chess'
+    }
+  },
+  {
     id: 9,
     imgUrl: '/NU_Rover.jpg',
     title: 'NU Mars Rover Team',
@@ -53,7 +70,7 @@ export const project_list: Item[] = [
         'Achieved highest ever score for Northeastern at University Rover Challenge (URC) 2024.'
       ],
       technologies: ['Python', 'ROS', 'YOLO', 'OpenCV'],
-      repo: 'https://nurover.notion.site/'
+      website: 'https://nurover.notion.site/'
     }
   },
   {

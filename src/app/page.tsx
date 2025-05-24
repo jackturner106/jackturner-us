@@ -7,6 +7,7 @@ import DetailPanel from './components/DetailPanel';
 import { experience_list } from './data/experiences';
 import { project_list } from './data/projects';
 import { education_list } from './data/educations';
+import { introduction_list } from './data/introduction';
 import { useRouter } from 'next/navigation';
 
 
@@ -23,7 +24,7 @@ export interface Item {
 }
 
 export default function Home() {
-  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
+  const [selectedItem, setSelectedItem] = useState<Item | null>(introduction_list[0]);
   const [activeTab, setActiveTab] = useState<'experience' | 'projects' | 'education'>(() => {
     if (typeof window !== 'undefined') {
       return (localStorage.getItem('activeTab') as 'experience' | 'projects' | 'education') || 'projects';
@@ -62,7 +63,23 @@ export default function Home() {
             />
           </div>
           <h1 className="text-2xl font-bold text-gray-900">Jack Turner</h1>
-          <p className="text-gray-600 mt-2">Software Engineer</p>
+          <button
+            onClick={() => {
+              if (window.innerWidth < 768) {
+                // On mobile, navigate to detail page
+                router.push(`/mobileDetailPage/${introduction_list[0].id}`);
+              } else {
+                // On desktop, show detail panel
+                setSelectedItem(introduction_list[0]);
+              }
+            }}
+            className="mb-4 mt-2 flex items-center text-gray-200 text-base font-large mx-auto"
+          >
+            <div className="bg-gray-700 hover:bg-gray-600 transition-colors relative w-32 h-8 mx-auto rounded-full flex items-center justify-center">
+              About Me
+              <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" strokeWidth="4" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l7-7 -7-7" /></svg>
+            </div>
+          </button>
           <div className="flex justify-center gap-4 mt-3">
             <a
               href="https://www.linkedin.com/in/turnerwj"

@@ -55,7 +55,7 @@ export default function DetailPanel({ item }: DetailPanelProps) {
   return (
     <div className="h-full overflow-auto p-6">
       <div className="max-w-3xl mx-auto">
-      <div className="relative w-32 h-32 rounded-full overflow-hidden">
+      {item.imgUrl != "/blank.png" ? <div className="relative w-32 h-32 rounded-full overflow-hidden">
             <Image
               src={item.imgUrl}
               alt={item.title}
@@ -63,7 +63,16 @@ export default function DetailPanel({ item }: DetailPanelProps) {
               style={{ objectFit: 'cover' }}
               priority
             />
-          </div>
+          </div> :
+          <div className="relative w-12 h-12 rounded-full overflow-hidden">
+          <Image
+            src={item.imgUrl}
+            alt={item.title}
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>}
         <h2 className="text-2xl font-bold text-gray-900 mb-2">{item.title}</h2>
         <p className="text-gray-600 mb-6">{item.subtitle}</p>
         <div className="prose max-w-none">
