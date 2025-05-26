@@ -5,7 +5,7 @@ export const experience_list: Item[] = [
     id: 11,
     imgUrl: '/Autonodyne.png',
     title: 'Software Engineer Co-op',
-    subtitle: 'Autonodyne • Jul. 2024 - Dec. 2025',
+    subtitle: 'Autonodyne • Jul. 2025 - Dec. 2025',
     type: 'experience',
     description: 'Incoming software engineer co-op at Autonodyne. Autonodyne is an innovative autonomous software company building AI to control unmanned vehicles.',
     details: {
@@ -41,7 +41,7 @@ export const experience_list: Item[] = [
     id: 5,
     imgUrl: '/DoD_logo.png',
     title: 'Language Analyst Intern',
-    subtitle: 'Department of Defense • May. 2024 - Aug. 2024',
+    subtitle: 'Department of Defense • May. 2023 - Aug. 2023',
     type: 'experience',
     description: 'Language Analyst using a variety of technologies to contribute to intelligence reports.',
     details: {
@@ -51,7 +51,7 @@ export const experience_list: Item[] = [
     id: 6,
     imgUrl: '/DoD_logo.png',
     title: 'Software Engineer Intern',
-    subtitle: 'Department of Defense • May. 2024 - Aug. 2024',
+    subtitle: 'Department of Defense • Jun. 2022 - Aug. 2022',
     type: 'experience',
     description: 'Combined language analyst and software engineer working on foriegn-language natural language processing system.',
     details: {
