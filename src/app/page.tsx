@@ -102,6 +102,7 @@ export default function Home() {
 
         {/* List of items */}
         <div className="p-4 flex-1 overflow-y-auto">
+          <div className="mb-32 md:mb-2">
           {items[activeTab].map((item) => (
             <Card
               key={item.id}
@@ -120,6 +121,7 @@ export default function Home() {
               imgUrl={item.imgUrl}
             />
           ))}
+          </div>
         </div>
       </div>
 
