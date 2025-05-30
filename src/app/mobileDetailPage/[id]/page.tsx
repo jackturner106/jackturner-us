@@ -25,7 +25,7 @@ export default function ProjectDetail() {
           Back
         </div>
       </button>
-      <DetailPanel item={item} />
+      {item!.page ? item?.page() : <DetailPanel item={item} />}
     </div>
   );
 } 
