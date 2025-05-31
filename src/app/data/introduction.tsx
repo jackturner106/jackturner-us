@@ -27,8 +27,8 @@ function IntroPage() {
   return (
     <div className="h-full overflow-auto p-6">
     <div className="max-w-3xl mx-auto">
-      <div className="relative w-12 h-12 rounded-full overflow-hidden">
-          <Image
+    <div className="hidden md:block relative w-12 h-12 rounded-full overflow-hidden">
+           <Image
             src={'/blank.png'}
             alt={'Hello There!'}
             fill
