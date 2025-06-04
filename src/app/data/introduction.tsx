@@ -92,7 +92,7 @@ function IntroPage() {
                 <polyline points="2,6 12,14 22,6" fill="none" strokeWidth="1" stroke="white" />
               </svg>
                 <div className="text-blue-600 hover:underline ml-2 mb-4">
-                  https://turner.wi@northeastern.edu
+                  turner.wi@northeastern.edu
                 </div>
               </div>
             </a>
