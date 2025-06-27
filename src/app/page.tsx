@@ -74,7 +74,11 @@ export default function Home() {
                 setSelectedItem(introduction_list[0]);
               }
             }}
-            className="mt-2 flex items-center text-gray-200 text-base font-large mx-auto"
+            className={`mt-2 flex items-center text-gray-200 text-base font-large mx-auto ${
+              selectedItem?.id === introduction_list[0].id
+              ? 'visible md:invisible'
+              : 'visible'
+            }`}
           >
             <div className="bg-gray-700 hover:bg-gray-600 transition-colors relative w-32 h-8 mx-auto rounded-full flex items-center justify-center">
               About Me
