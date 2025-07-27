@@ -7,7 +7,7 @@ interface CardProps {
   subtitle: string;
   onClick: () => void;
   isSelected: boolean;
-  imgUrl: string;
+  imgUrl?: string;
 }
 
 export default function Card({ title, subtitle, onClick, isSelected, imgUrl }: CardProps) {
@@ -28,7 +28,7 @@ export default function Card({ title, subtitle, onClick, isSelected, imgUrl }: C
         <div className="min-w-12">
           <div className="relative w-12 h-12 rounded-full overflow-hidden">
               <Image
-                src={imgUrl}
+                src={imgUrl || "/blank.png"}
                 alt={title}
                 fill
                 style={{ objectFit: 'cover' }}

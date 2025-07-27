@@ -24,6 +24,10 @@ export default function DetailPanel({ item }: DetailPanelProps) {
     );
   }
 
+  if (!item.imgUrl) {
+    item.imgUrl = "/blank.png"
+  }
+
   const linkify = (text: string) => {
     const urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
     return text.replace(urlRegex, function(url) {

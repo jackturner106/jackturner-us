@@ -15,7 +15,7 @@ export const experience_list: Item[] = [
     id: 1,
     imgUrl: '/NASA_logo.png',
     title: 'Software Engineer - Pathways Program',
-    subtitle: 'NASA • Aug. 2024 - Present',
+    subtitle: 'NASA • Aug. 2024 - Jul. 2025',
     type: 'experience',
     description: 'NASA Pathways Program at Wallops Flight Facility/Goddard Space Flight Center.',
     details: {
