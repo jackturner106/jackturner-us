@@ -1,5 +1,3 @@
-import { Item } from '../page';
-
 export interface Book {
     id: number;
     title: string;

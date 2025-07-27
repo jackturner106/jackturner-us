@@ -1,7 +1,7 @@
 'use client';
 
 import Card from '../components/Card';
-import DetailPanel from '../components/DetailPanel';
+import BookPanel from '../components/BookPanel';
 import { books, Book } from '../data/books';
 import Image from 'next/image';
 
@@ -43,7 +43,7 @@ export default function ReadingLogPage() {
       </div>
       {/* Right panel - Book details */}
       <div className="hidden md:block md:w-3/5 lg:w-2/3 bg-white overflow-y-auto">
-        <DetailPanel item={selectedBook as any} />
+        <BookPanel book={selectedBook} />
       </div>
     </div>
   );
