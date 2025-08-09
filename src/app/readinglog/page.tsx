@@ -1,6 +1,6 @@
 'use client';
 
-import Card from '../components/Card';
+import BookCard from '../components/BookCard';
 import BookPanel from '../components/BookPanel';
 import { books, Book } from '../data/books';
 import Image from 'next/image';
@@ -17,12 +17,12 @@ export default function ReadingLogPage() {
         <div className="p-6 border-b border-gray-200 flex">
           <div>
           <h2 className="text-2xl font-bold text-gray-900 pr-8">Currently Reading:</h2>
-          <p className="text-gray-600 pr-8 mt-2">Destiny and Power: The American Odyssey of George Herbert Walker Bush</p>
-          <p className="text-gray-600 pr-8 mt-4">Jon Meacham</p>
+          <p className="text-gray-600 pr-8 mt-2">Munich</p>
+          <p className="text-gray-600 pr-8 mt-4">Robert Harris</p>
           </div>
           <Image
-              src={"/destiny_and_power.jpg"}
-              alt={"Destiny and Power: The American Odyssey of George Herbert Walker Bush"}
+              src={"/munich.jpg"}
+              alt={"Munich by Robert Harris"}
               width={130}
               height={130}
               priority
@@ -31,10 +31,11 @@ export default function ReadingLogPage() {
         <div className="p-4 flex-1 overflow-y-auto">
         <h2 className="text-2xl font-bold text-gray-900 pr-8">Previously Read:</h2>
           {books.map((book) => (
-            <Card
+            <BookCard
               key={book.id}
               title={book.title}
               subtitle={book.subtitle}
+              imgUrl={book.image ? book.image : undefined}
               isSelected={selectedBook?.id === book.id}
               onClick={() => setSelectedBook(book)}
             />

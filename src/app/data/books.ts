@@ -3,12 +3,26 @@ export interface Book {
     title: string;
     subtitle: string;
     description: string;
+    image?: string;
     details: {
       [key: string]: string | string[];
     };
   }
 
-export const books: Book[] = [
+export const books: Book[] = [    {
+  id: 17,
+  title: 'Destiny and Power: The American Odyssey of George Herbert Walker Bush',
+  subtitle: 'Jon Meacham • 2015',
+  description: 'Biography of George H.W. Bush, from his childhood to his time as President.',
+  details: {
+    "  ": "At 600 pages this book took a while to get through, but in the end it just was not long enough. Meacham received an unprecedented level of cooperation from the Bush family and some of their advisors and staff, and certainly could have included far more material. The sections on Bush's childhood and oil career felt short, with around 1/3 of the book dedicated to the ~4.2% of his life that he was President. That said, the book moves along at an excellent pace, and contains a lot of insight. I thoroughly enjoyed reading it, and would definitely recommend if you have the time.",
+    " ": ["4.5/5",
+    ],
+    "Genre Tags": 'Non-Fiction, Biography,Politics, History',
+    "Date Read": "August 2025"
+  },
+  image: "/destiny_and_power.jpg"
+},
     {
         id: 16,
         title: 'Eve in Hollywood',
@@ -20,6 +34,7 @@ export const books: Book[] = [
           "Genre Tags": 'Fiction',
           "Date Read": "July 2025"
         },
+        image: "/eve_in_hollywood.jpg"
       },
     {
         id: 15,
@@ -32,6 +47,7 @@ export const books: Book[] = [
           "Genre Tags": 'Fiction, Short Fiction',
           "Date Read": "July 2025"
         },
+        image: "/table_for_two.jpg"
       },
     {
         id: 14,

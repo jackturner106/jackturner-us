@@ -7,6 +7,7 @@ interface DetailPanelProps {
     title: string;
     subtitle: string;
     description: string;
+    image?: string;
     details: {
       [key: string]: string | string[];
     };
@@ -53,15 +54,24 @@ export default function DetailPanel({ book }: DetailPanelProps) {
   return (
     <div className="h-full overflow-auto p-6">
       <div className="max-w-3xl mx-auto">
-          <div className="relative w-12 h-12 rounded-full overflow-hidden">
+        {book.image ?
+        <div className="relative w-40 h-40 overflow-hidden">
           <Image
-            src={'/blank.png'}
+            src={book.image}
             alt={"Space filling image"}
             fill
-            style={{ objectFit: 'cover' }}
-            priority
+            style={{ objectFit: 'contain' }}
           />
         </div>
+        :<div className="relative w-12 h-12 overflow-hidden">
+        <Image
+          src={'/blank.png'}
+          alt={"Space filling image"}
+          fill
+          style={{ objectFit: 'cover' }}
+          priority
+        />
+      </div>}
         <h2 className="text-2xl font-bold text-gray-900 mb-2">{book.title}</h2>
         <p className="text-gray-600 mb-6">{book.subtitle}</p>
         <div className="prose max-w-none">
