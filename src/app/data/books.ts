@@ -9,20 +9,35 @@ export interface Book {
     };
   }
 
-export const books: Book[] = [    {
-  id: 17,
-  title: 'Destiny and Power: The American Odyssey of George Herbert Walker Bush',
-  subtitle: 'Jon Meacham • 2015',
-  description: 'Biography of George H.W. Bush, from his childhood to his time as President.',
-  details: {
-    "  ": "At 600 pages this book took a while to get through, but in the end it just was not long enough. Meacham received an unprecedented level of cooperation from the Bush family and some of their advisors and staff, and certainly could have included far more material. The sections on Bush's childhood and oil career felt short, with around 1/3 of the book dedicated to the ~4.2% of his life that he was President. That said, the book moves along at an excellent pace, and contains a lot of insight. I thoroughly enjoyed reading it, and would definitely recommend if you have the time.",
-    " ": ["4.5/5",
-    ],
-    "Genre Tags": 'Non-Fiction, Biography,Politics, History',
-    "Date Read": "August 2025"
+export const books: Book[] = [
+  {
+    id: 18,
+    title: 'Robot Proof: Higher Education in the Age of Artificial Intelligence',
+    subtitle: 'Joseph E. Aoun • 2017 (Revised 2023)',
+    description: 'Describes Aoun\'s vision for the role of the university in educating the workforce of tomorrow.',
+    details: {
+      "  ": "This book was unimpressive at the start, with Aoun walking through a high level overview of various ideas while offering little in the way of concrete details or supporting arguments. In the first few chapters he quotes the same statistic in 3 different place, to make the same argument 3 different times, and really just feels like he is repeating himself. I got the distinct impression that this already short (160 pages) book would have been better off as a paper or a long form magazine article. The back half did pick up a bit, with some specific examples in chapters 4 and 5 of various programs working in the real world. In the end I certainly think Aoun has the right ideas about what modern higher education could look like - although as a Northeastern student I'm certainly biased - but I'm not convinced this was the most rigorous possible defense of those ideas. If you are particularly interested in learning models or perhaps considering a return to higher education this book might be worth picking up, but otherwise you could get the general picture by visiting Northeastern's website and reading the marketing materials. ",
+      " ": ["2/5",
+      ],
+      "Genre Tags": 'Non-Fiction, Technology, Education',
+      "Date Read": "August 2025"
+    },
+    image: "/robot_proof.jpeg"
   },
-  image: "/destiny_and_power.jpg"
-},
+  {
+    id: 17,
+    title: 'Destiny and Power: The American Odyssey of George Herbert Walker Bush',
+    subtitle: 'Jon Meacham • 2015',
+    description: 'Biography of George H.W. Bush, from his childhood to his time as President.',
+    details: {
+      "  ": "Overall this was an excellent portrait of what ended up being a suprisingly complex subject. At 600 pages it took a while to get through, but in the end it just was not long enough. Meacham received an unprecedented level of cooperation from the Bush family and some of their advisors and staff, and certainly could have included far more material. The sections on Bush's childhood and oil career felt short, with around 1/3 of the book dedicated to the ~4.2% of his life that he was President. That said, the book moves along at an excellent pace, and contains a lot of insight. I thoroughly enjoyed reading it, and would definitely recommend if you have the time.",
+      " ": ["4.5/5",
+      ],
+      "Genre Tags": 'Non-Fiction, Biography, Politics, History',
+      "Date Read": "August 2025"
+    },
+    image: "/destiny_and_power.jpg"
+  },
     {
         id: 16,
         title: 'Eve in Hollywood',
