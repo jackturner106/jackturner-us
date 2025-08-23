@@ -17,11 +17,11 @@ export default function ReadingLogPage() {
         <div className="p-6 border-b border-gray-200 flex">
           <div>
           <h2 className="text-2xl font-bold text-gray-900 pr-8">Currently Reading:</h2>
-          <p className="text-gray-600 pr-8 mt-2">Decision Points</p>
-          <p className="text-gray-600 pr-8 mt-4">George W. Bush</p>
+          <p className="text-gray-600 pr-8 mt-2">The Boys from Biloxi</p>
+          <p className="text-gray-600 pr-8 mt-4">John Grisham</p>
           </div>
           <Image
-              src={"/decision_points.jpg"}
+              src={"/boys_from_biloxi.jpg"}
               alt={"Decision Points by George W. Bush"}
               width={130}
               height={130}

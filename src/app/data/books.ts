@@ -12,6 +12,19 @@ export interface Book {
 export const books: Book[] = [
   {
     id: 19,
+    title: 'Decision Points',
+    subtitle: 'George W. Bush • 2010',
+    description: 'Memoirs of Bush Jr. focusing on the most influential decisions he made before and during his presidency.',
+    details: {
+      "  ": "",
+      "Rating": "4/5",
+      "Genre Tags": 'Non-Fiction, Biography, Politics',
+      "Date Read": "23 August 2025"
+    },
+    image: "/decision_points.jpg"
+  },
+  {
+    id: 19,
     title: 'Munich',
     subtitle: 'Robert Harris • 2017',
     description: 'Historical novel covering a 4 day period around the Munich agreement of 1938.',
