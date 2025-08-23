@@ -11,7 +11,7 @@ export interface Book {
 
 export const books: Book[] = [
   {
-    id: 19,
+    id: 20,
     title: 'Decision Points',
     subtitle: 'George W. Bush • 2010',
     description: 'Memoirs of Bush Jr. focusing on the most influential decisions he made before and during his presidency.',
