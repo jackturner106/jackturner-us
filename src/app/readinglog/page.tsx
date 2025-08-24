@@ -4,11 +4,14 @@ import BookCard from '../components/BookCard';
 import BookPanel from '../components/BookPanel';
 import { books, Book } from '../data/books';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 import { useState } from 'react';
 
 export default function ReadingLogPage() {
-  const [selectedBook, setSelectedBook] = useState<Book | null>(books[0]);
+  const [selectedBook, setSelectedBook] = useState<Book | null>(null);
+  const router = useRouter();
+
 
   return (
     <div className="h-screen flex">
@@ -37,7 +40,15 @@ export default function ReadingLogPage() {
               subtitle={book.subtitle}
               imgUrl={book.image ? book.image : undefined}
               isSelected={selectedBook?.id === book.id}
-              onClick={() => setSelectedBook(book)}
+              onClick={() => {
+                if (window.innerWidth < 768) {
+                  // On mobile, navigate to detail page
+                  router.push(`/mobileBookPage/${book.id}`);
+                } else {
+                  // On desktop, show detail panel
+                  setSelectedBook(book);
+                }
+              }}
             />
           ))}
         </div>

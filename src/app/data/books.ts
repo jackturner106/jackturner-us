@@ -16,8 +16,8 @@ export const books: Book[] = [
     subtitle: 'George W. Bush • 2010',
     description: 'Memoirs of Bush Jr. focusing on the most influential decisions he made before and during his presidency.',
     details: {
-      "  ": "",
-      "Rating": "4/5",
+      "  ": "This was the first political autobiography/memoir that I have read, and overall it was definitely worth the time. Bush's writing is clear and concise, and in many ways he does well to explain why the decisions he made were the right ones at the time. He presents some interesting insights into the White House decision making process, although the focus on his personal decisions certainly obscures the contributions of others in the executive branch. Given that I was born after 9/11, I had mostly heard the modern take on Bush Jr; that he was a war monger who lied to our allies and our nation to get us to invade Iraq. The chapters of this book focused on 9/11, and the decisions afterward, certainly gave me a better picture of the environment of the time. That said, Decision Points is pretty explicitly a defense of the second Bush presidency, and for that reason Bush somewhat glosses over issues that others might think significant. His DUI, his use of his Dad's influence to obtain a national guard position, thus avoiding the Vietnam draft, the fact that there were not WMDs in Iraq, all of these probably would have been given more time in a more critical review. He also presents a few chapters (\"Leading\", \"Freedom Agenda\") that read more like lists of achievements that insights into his decisions. I think the real value in this book lies in the chapters that focused on one particular issue (\"Stem Cells\"), where he truly does give good insight into the decision making and crisis response process in the White House, and lays out his personal values as well. In the end, I would recommend this book to anyone interested in the time, although I would caution that it should be approached with some amount of skepticism.",
+      "Rating": "3.5/5",
       "Genre Tags": 'Non-Fiction, Biography, Politics',
       "Date Read": "23 August 2025"
     },
@@ -29,10 +29,10 @@ export const books: Book[] = [
     subtitle: 'Robert Harris • 2017',
     description: 'Historical novel covering a 4 day period around the Munich agreement of 1938.',
     details: {
-      "  ": "",
-      "Rating": "4/5",
+      "  ": "Munich was a surprisingly fun book that I got pulled in to and ended up reading in about a day. It has interesting characters and an interesting premise, and moves along at an excellent pace. However, its clumsy use of plot devices and uneven tone ultimately detracted from the story, and any message that it might have contained. The ending, especially the resolution to the missing file subplot, feels shoehorned in, and doesn't match the rest of the book. The mysterious girl in the past is a bit forced, and fails to truly engage the reader. I definitely recommend this book as entertainment if you have some spare time, but I don't think anyone will be advocating for it to enter the literary canon. ",
+      "Rating": "3.5/5",
       "Genre Tags": 'Fiction, Historical Fiction',
-      "Date Read": "8 August 2025"
+      "Date Read": "10 August 2025"
     },
     image: "/munich.jpg"
   },
@@ -56,7 +56,7 @@ export const books: Book[] = [
     description: 'Biography of George H.W. Bush, from his childhood to his time as President.',
     details: {
       "  ": "Overall this was an excellent portrait of what ended up being a suprisingly complex subject. At 600 pages it took a while to get through, but in the end it just was not long enough. Meacham received an unprecedented level of cooperation from the Bush family and some of their advisors and staff, and certainly could have included far more material. The sections on Bush's childhood and oil career felt short, with around 1/3 of the book dedicated to the ~4.2% of his life that he was President. That said, the book moves along at an excellent pace, and contains a lot of insight. I thoroughly enjoyed reading it, and would definitely recommend if you have the time.",
-      "Rating": "4/5",
+      "Rating": "4.5/5",
       "Genre Tags": 'Non-Fiction, Biography, Politics, History',
       "Date Read": "8 August 2025"
     },
@@ -107,6 +107,7 @@ export const books: Book[] = [
           "Rating": "2.5/5",
           "Genre Tags": 'Fiction, Action, Spy',
         },
+        image: "/secret_cardinal.jpg"
       },
     {
         id: 12,
@@ -117,6 +118,7 @@ export const books: Book[] = [
           "Rating": "3/5",
           "Genre Tags": 'Fiction, Legal Drama',
         },
+        image: "/rumpole_of_the_bailey.jpg"
       },
     {
         id: 11,
