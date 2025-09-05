@@ -11,6 +11,19 @@ export interface Book {
 
 export const books: Book[] = [
   {
+    id: 21,
+    title: 'The Boys from Biloxi',
+    subtitle: 'John Grisham • 2022',
+    description: 'Legal thriller following two boys and their experiences with the criminal underworld in Biloxi, MS',
+    details: {
+      "  ": "This was an exciting novel with a fantastic ending. It took a little while to get started, I felt like the exposition went on a little long, but by the end I was completely hooked. Grisham's writing style is incredibly straightforward, and I would almost say it lacked color except for the fact that I couldn't put the book down. The characters developed well over the course of the novel, and the intertwining stories of the two boys led to a satisfying, if ultimately slightly melodramatic, ending",
+      "Rating": "4/5",
+      "Genre Tags": 'Fiction, Crime, Legal Drama',
+      "Date Read": "31 August 2025"
+    },
+    image: "/boys_from_biloxi.jpg"
+  },
+  {
     id: 20,
     title: 'Decision Points',
     subtitle: 'George W. Bush • 2010',
