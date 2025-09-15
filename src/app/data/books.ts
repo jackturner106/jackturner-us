@@ -155,6 +155,7 @@ export const books: Book[] = [
           "Rating": "2/5",
           "Genre Tags": 'Non-Fiction, Politics',
         },
+        image: "/washington_rules.png"
       },
     {
         id: 10,
@@ -165,6 +166,7 @@ export const books: Book[] = [
           "Rating": "5/5",
           "Genre Tags": 'Fiction, Historical Fiction',
         },
+        image: "/mudbound.jpg"
       },
     {
         id: 9,
@@ -175,6 +177,7 @@ export const books: Book[] = [
           "Rating": "4.5/5",
           "Genre Tags": 'Non-Fiction, Economics, History',
         },
+        image: "/lords_of_finance.jpg"
       },
     {
         id: 8,
@@ -185,6 +188,7 @@ export const books: Book[] = [
           "Rating": "4/5",
           "Genre Tags": 'Non-Fiction, Economics',
         },
+        image: "/freakonomics.jpg"
       },
     {
         id: 7,
@@ -195,6 +199,7 @@ export const books: Book[] = [
           "Rating": "4/5",
           "Genre Tags": 'Fiction, Spy',
         },
+        image: "/moscow_rules.jpg"
       },
     {
         id: 6,
@@ -205,6 +210,7 @@ export const books: Book[] = [
           "Rating": "2.5/5",
           "Genre Tags": 'Fiction',
         },
+        image: "/the_christmas_train.jpg"
       },
     {
         id: 5,
@@ -215,6 +221,7 @@ export const books: Book[] = [
           "Rating": "4/5",
           "Genre Tags": 'Non-Fiction, Politics',
         },
+        image: "/world_order.jpg"
       },
     {
         id: 4,
@@ -225,6 +232,7 @@ export const books: Book[] = [
           "Rating": "2.5/5",
           "Genre Tags": 'Fiction, Spy',
         },
+        image: "/the_defector.jpg"
       },
     {
         id: 3,
@@ -236,6 +244,7 @@ export const books: Book[] = [
           "Genre Tags": 'Fiction, Crime, Mystery',
           "Date Read": "May 2025"
         },
+        image: "/portrait_of_molly_dean.jpg"
       },
     {
       id: 2,
@@ -247,6 +256,7 @@ export const books: Book[] = [
         "Genre Tags": 'Non-Fiction, Physics, Pop-Science',
         "Date Read": "May 2025"
       },
+      image: "/black_holes.jpg"
     },
     {
       id: 1,
@@ -262,5 +272,6 @@ export const books: Book[] = [
         "Genre Tags": 'Non-Fiction, Economics',
         "Date Read": "March 2025"
       },
+      image: "/misbehaving.jpg"
     },
   ];
