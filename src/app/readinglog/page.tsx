@@ -20,12 +20,12 @@ export default function ReadingLogPage() {
         <div className="p-6 border-b border-gray-200 flex">
           <div>
           <h2 className="text-2xl font-bold text-gray-900 pr-8">Currently Reading:</h2>
-          <p className="text-gray-600 pr-8 mt-2">The Great Dissenter: The Story of John Marshall Harlan, America&apos;s Judicial Hero</p>
-          <p className="text-gray-600 pr-8 mt-4">Peter S. Canellos</p>
+          <p className="text-gray-600 pr-8 mt-2">Foundation and Empire</p>
+          <p className="text-gray-600 pr-8 mt-4">Isaac Asimov</p>
           </div>
           <Image
-              src={"/great_dissenter.jpg"}
-              alt={"The Great Dissenter by Peter S. Canellos"}
+              src={"/foundation_and_empire.jpg"}
+              alt={"Foundation and Empire by Isaac Asimov"}
               width={130}
               height={130}
               priority
