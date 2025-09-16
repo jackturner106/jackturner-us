@@ -238,7 +238,7 @@ export const books: Book[] = [
         id: 3,
         title: 'The Portrait of Molly Dean',
         subtitle: 'Katherine Kovacic • 2018',
-        description: 'An art dealer solves in 1999 solves a murder from 70 years prior.',
+        description: 'An art dealer in 1999 solves a murder from 70 years prior.',
         details: {
           "Rating": "4.5/5",
           "Genre Tags": 'Fiction, Crime, Mystery',
