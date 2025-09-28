@@ -11,6 +11,32 @@ export interface Book {
 
 export const books: Book[] = [
   {
+    id: 24,
+    title: 'Second Foundation',
+    subtitle: 'Isaac Asimov • 1953',
+    description: 'The Foundation has risen again after their largest challenge, but now the Second Foundation has been forced to show their hand.',
+    details: {
+      "Review": "",
+      "Rating": "2/5",
+      "Genre Tags": 'Fiction, Sci-fi',
+      "Date Read": "28 September 2025"
+    },
+    image: "/second_foundation.jpg"
+  },  
+  {
+    id: 23,
+    title: 'Foundation and Empire',
+    subtitle: 'Isaac Asimov • 1952',
+    description: 'Continues the tale of the foundation in two more short stories, including the rise of a unforseen force that throws Seldon\'s plan into disarray',
+    details: {
+      "Review": "",
+      "Rating": "3/5",
+      "Genre Tags": 'Fiction, Sci-fi',
+      "Date Read": "14 September 2025"
+    },
+    image: "/foundation_and_empire.jpg"
+  },
+  {
     id: 22,
     title: 'Foundation',
     subtitle: 'Isaac Asimov • 1951',
