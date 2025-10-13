@@ -10,6 +10,19 @@ export interface Book {
   }
 
 export const books: Book[] = [
+    {
+    id: 25,
+    title: 'The Great Dissenter: The Story of John Marshall Harlan, America\'s Judicial Hero',
+    subtitle: 'Peter S. Canellos • 2021',
+    description: '',
+    details: {
+      "Review": "",
+      "Rating": "4/5",
+      "Genre Tags": 'Non-Fiction, Biography, Politics, Law',
+      "Date Read": "13 October 2025"
+    },
+    image: "/great_dissenter.jpg"
+  },  
   {
     id: 24,
     title: 'Second Foundation',
