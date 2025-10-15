@@ -10,6 +10,19 @@ export interface Book {
   }
 
 export const books: Book[] = [
+      {
+    id: 26,
+    title: 'Normal People',
+    subtitle: 'Sally Rooney • 2018',
+    description: '',
+    details: {
+      "Review": "",
+      "Rating": "5/5",
+      "Genre Tags": 'Fiction, Romance',
+      "Date Read": "14 October 2025"
+    },
+    image: "/normal_people.png"
+  },  
     {
     id: 25,
     title: 'The Great Dissenter: The Story of John Marshall Harlan, America\'s Judicial Hero',

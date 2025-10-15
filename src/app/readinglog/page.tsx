@@ -20,12 +20,12 @@ export default function ReadingLogPage() {
         <div className="p-6 border-b border-gray-200 flex">
           <div>
           <h2 className="text-2xl font-bold text-gray-900 pr-8">Currently Reading:</h2>
-          <p className="text-gray-600 pr-8 mt-2">Normal People</p>
-          <p className="text-gray-600 pr-8 mt-4">Sally Rooney</p>
+          <p className="text-gray-600 pr-8 mt-2">Blowout: Corrupted Democracy, Rogue State Russia, and the Richest, Most Destructive Industry on Earth</p>
+          <p className="text-gray-600 pr-8 mt-4">Rachel Maddow</p>
           </div>
           <Image
-              src={"/normal_people.png"}
-              alt={"Normal People"}
+              src={"/blowout.jpg"}
+              alt={"Blowout book cover"}
               width={130}
               height={130}
               priority
