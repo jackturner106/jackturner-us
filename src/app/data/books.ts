@@ -10,7 +10,19 @@ export interface Book {
   }
 
 export const books: Book[] = [
-      {
+            {
+    id: 27,
+    title: 'Do Android\'s Dream of Electric Sheep?',
+    subtitle: 'Philip K. Dick • 1968',
+    description: '',
+    details: {
+      "Review": "",
+      "Rating": "3.5/5",
+      "Genre Tags": 'Fiction, Sci-fi',
+      "Date Read": "25 October 2025"
+    },
+    image: "/do_androids.jpg"
+  },  {
     id: 26,
     title: 'Normal People',
     subtitle: 'Sally Rooney • 2018',
